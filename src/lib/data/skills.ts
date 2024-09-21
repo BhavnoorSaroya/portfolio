@@ -115,14 +115,6 @@ export const items = [
 		name: 'OCaml',
 		category: 'pro-lang'
 	}),
-	defineSkill({
-		slug: 'reactjs',
-		color: 'cyan',
-		description: 'React is a JavaScript library for building user interfaces...',
-		logo: Assets.ReactJs,
-		name: 'React Js',
-		category: 'library'
-	}),
 	// defineSkill({
 	// 	slug: 'remix',
 	// 	color: 'purple',
@@ -134,9 +126,25 @@ export const items = [
 	defineSkill({
 		slug: 'svelte',
 		color: 'orange',
-		description: 'Svelte is a radical new approach to building user interfaces...',
+		description: 'Svelte is a radical new approach to building user interfaces. It is extremely quick and powerful. Svelte was recently voted the most admired JS web framework',
 		logo: Assets.Svelte,
 		name: 'Svelte',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: "nextjs",
+		color: "white",
+		description: "The React Framework for the Web. Used by some of the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components. Svelte shifts as much work as possible out of the browser and into your build step. No more manual optimisations — just faster, more efficient apps.",
+		logo: Assets.Nextjs,
+		name: "NextJS",
+		category: "library",
+	}),
+	defineSkill({
+		slug: 'reactjs',
+		color: 'cyan',
+		description: 'React is a JavaScript library for building user interfaces...',
+		logo: Assets.ReactJs,
+		name: 'React Js',
 		category: 'library'
 	}),
 	defineSkill({
@@ -195,14 +203,14 @@ export const items = [
 		name: 'Angular',
 		category: 'framework'
 	}),
-	defineSkill({
-		slug: 'xamarin',
-		color: 'blue',
-		description: 'Xamarin is a cross-platform framework for creating native mobile apps with .NET...',
-		logo: Assets.Xamarin,
-		name: 'Xamarin',
-		category: 'framework'
-	}),
+	// defineSkill({
+	// 	slug: 'xamarin',
+	// 	color: 'blue',
+	// 	description: 'Xamarin is a cross-platform framework for creating native mobile apps with .NET...',
+	// 	logo: Assets.Xamarin,
+	// 	name: 'Xamarin',
+	// 	category: 'framework'
+	// }),
 	defineSkill({
 		slug: 'nodejs',
 		color: 'green',
@@ -275,13 +283,29 @@ export const items = [
 		name: 'Redis',
 		category: 'db'
 	}),
+	// defineSkill({
+	// 	slug: 'neo4j',
+	// 	color: 'blue',
+	// 	description: 'Neo4j is a graph database management system, designed for handling connected data...',
+	// 	logo: Assets.Neo4j,
+	// 	name: 'Neo4j',
+	// 	category: 'db'
+	// }),
 	defineSkill({
-		slug: 'neo4j',
-		color: 'blue',
-		description: 'Neo4j is a graph database management system, designed for handling connected data...',
-		logo: Assets.Neo4j,
-		name: 'Neo4j',
-		category: 'db'
+		slug: 'tensorflow',
+		color: 'yellow',
+		description: 'Ai models designed to run on a variety of devices',
+		logo: Assets.TensorFlow,
+		name: "TensorFlow",
+		category: 'tooling'
+	}),
+	defineSkill({
+		slug: 'coral',
+		color: 'white',
+		description: 'A library for utilising google\'s edge tpu, speeding up heavy calculations',
+		logo: Assets.Coral,
+		name: "Google Coral",
+		category: 'library'
 	}),
 	// defineSkill({
 	// 	slug: 'prisma',
@@ -299,14 +323,14 @@ export const items = [
 		name: 'Docker',
 		category: 'devops'
 	}),
-	defineSkill({
-		slug: 'kubernetes',
-		color: 'blue',
-		description: 'Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications...',
-		logo: Assets.Kubernetes,
-		name: 'Kubernetes',
-		category: 'devops'
-	}),
+	// defineSkill({
+	// 	slug: 'kubernetes',
+	// 	color: 'blue',
+	// 	description: 'Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications...',
+	// 	logo: Assets.Kubernetes,
+	// 	name: 'Kubernetes',
+	// 	category: 'devops'
+	// }),
 	defineSkill({
 		slug: 'vite',
 		color: 'purple',
@@ -353,7 +377,7 @@ export const items = [
 		description: 'CSS (Cascading Style Sheets) is used to style and layout web pages...',
 		logo: Assets.CSS,
 		name: 'CSS',
-		category: 'markup'
+		category: 'design'
 	}),
 	// defineSkill({
 	// 	slug: 'postcss',
@@ -377,7 +401,7 @@ export const items = [
 		description: 'Sass is a preprocessor scripting language that is interpreted or compiled into CSS...',
 		logo: Assets.Sass,
 		name: 'Sass',
-		category: 'markup'
+		category: 'design'
 	}),
 	defineSkill({
 		slug: 'tailwind',
@@ -385,7 +409,7 @@ export const items = [
 		description: 'Tailwind CSS is a utility-first CSS framework for building custom designs without leaving your HTML...',
 		logo: Assets.Tailwind,
 		name: 'Tailwind',
-		category: 'markup'
+		category: 'design'
 	}),
 	defineSkill({
 		slug: 'photoshop',
@@ -419,7 +443,8 @@ export const items = [
 		name: 'Adobe Illustrator',
 		category: 'design'
 	}),
-	
+
+
 ];
 
 

@@ -12,7 +12,19 @@ export const items: Array<Education> = [
 		period: { from: new Date(2020, 0, 1), to: new Date(2022, 5, 1) },
 		shortDescription: '',
 		slug: 'dummy-education-item',
-		subjects: ['C', 'Algorithm', 'Algebra', 'Python', 'C++', 'Java', 'English']
+		subjects: [
+			'C',
+			'Algorithms and Data structures',
+			'Algebra',
+			'Python',
+			'C++',
+			'Java',
+			'Javascript',
+			'Ocaml',
+			'Go',
+			'Rust',
+			'Kotlin'
+		]
 	},
 	// {
 	// 	degree: 'PhD of Computer Science',

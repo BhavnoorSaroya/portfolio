@@ -8,35 +8,35 @@ export const name = 'Bhavnoor';
 export const lastName = 'Saroya';
 
 export const description =
-	'Full Stack Developer, based in Vancouver, BC';
+    'Full Stack Developer, based in Vancouver, BC';
 
 export const links: Array<{ platform: Platform; link: string }> = [
-	{ platform: Platform.GitHub, link: 'https://github.com/BhavnoorSaroya' },
-	{
-		platform: Platform.Linkedin,
-		link: 'https://www.linkedin.com/bhavnoor-saroya/'
-	},
-	// {
-	// 	platform: Platform.Twitter,
-	// 	link: 'https://twitter.com/'
-	// },
-	// {
-	// 	platform: Platform.StackOverflow,
-	// 	link: 'https://stackoverflow.com/'
-	// },
-	{
-		platform: Platform.Youtube,
-		link: 'https://www.youtube.com/@bhavnoorsaroya4912'
-	},
-	{
-		platform: Platform.Email,
-		link: 'bhavnoorsaroya@gmail.com'
-	},
-	
-	// {
-	// 	platform: Platform.Facebook,
-	// 	link: 'https://www.facebook.com'
-	// }
+    { platform: Platform.GitHub, link: 'https://github.com/BhavnoorSaroya' },
+    {
+        platform: Platform.Linkedin,
+        link: 'https://www.linkedin.com/in/bhavnoor-saroya/'
+    },
+    // {
+    // 	platform: Platform.Twitter,
+    // 	link: 'https://twitter.com/'
+    // },
+    // {
+    // 	platform: Platform.StackOverflow,
+    // 	link: 'https://stackoverflow.com/'
+    // },
+    {
+        platform: Platform.Youtube,
+        link: 'https://www.youtube.com/@bhavnoorsaroya4912'
+    },
+    {
+        platform: Platform.Email,
+        link: 'bhavnoorsaroya@gmail.com'
+    },
+
+    // {
+    // 	platform: Platform.Facebook,
+    // 	link: 'https://www.facebook.com'
+    // }
 ];
 
 export const skillss = getSkills('js', 'css', 'html', 'reactjs', 'sass', 'svelte', 'ts');
@@ -88,5 +88,6 @@ export const skills = getSkills(
     'after-effects',  // Adobe After Effects
     'premiere',       // Adobe Premiere
     'illustrator',    // Adobe Illustrator
-	'ocaml'           // OCaml
+    'ocaml',          // OCaml
+    'tensorflow'      // Tensorflow   
 );

@@ -37,11 +37,11 @@ const Assets = {
 	Kotlin: a('kotlin.png'),
 	Python: a('python.png'),
 	NodeJs: a('node.png'),
-	Deno: a('deno.png', 'deno-dark.png'),
+	Deno: a('deno.png', 'deno.png'),
 	Svelte: a('svelte.png'),
 	ExpressJs: a('express.png'),
 	JavaScript: a('js.png'),
-	Fastify: a('fastify.svg', 'fastify-dark.png'),
+	Fastify: a('fastify.svg', 'fastify.svg'),
 	NestJs: a('nest.svg'),
 	Quasar: a('quasar.svg'),
 	SolidJs: a('solid.svg'),
@@ -71,7 +71,10 @@ const Assets = {
 	Unocss: a('unocss.svg'),
 	Ruvy: a('ruvy.svg'),
 	Postcss: a('postcss.svg'),
-	Ocaml: a('ocaml.svg')
+	Ocaml: a('ocaml.svg'),
+	TensorFlow: a('tensorflow.svg'),
+	Coral: a('coral.png'),
+	Nextjs: a('nextjs.svg', 'nextjs-dark.svg'),
 };
 
 export default Assets;
