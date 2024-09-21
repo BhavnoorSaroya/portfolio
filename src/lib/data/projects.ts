@@ -4,20 +4,20 @@ import type { Project } from '../types';
 
 export const items: Array<Project> = [
 	{
-		slug: 'slick-portfolio-angular',
-		color: '#5e95e3',
+		slug: 'garaage',
+		color: '#FFA500',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+			'Garaage is a cross platform mobile application for vehicle maintenance and diy car repair using AI. It utilizes computer using, and augmented reality to help users diagnose and repair their vehicles in real time, it can also catch issues early thanks to its easy integration with obd readers',
 		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-		logo: Assets.Unknown,
-		name: 'Slick Portfolio',
+			'Cross platform mobile application for vehicle maintenance and diy car repair using AI.',
+		links: [{ to: '', label: '' }],
+		logo: Assets.Flutter,
+		name: 'Garaage',
 		period: {
 			from: new Date()
 		},
 		skills: getSkills('angular', 'ts', 'tailwind'),
-		type: 'Website Template'
+		type: 'Mobile Application',
 	},
 	{
 		slug: 'slick-portfolio-svelte',
