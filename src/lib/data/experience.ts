@@ -59,38 +59,38 @@ export const items: Array<Experience> = [
     slug: 'regional-manager-systems-analyst',
     name: 'Regional Manager and Systems Analyst',
     company: 'Byte Camp',
-    description: 'Managing regional operations and analyzing system processes.',
-    shortDescription: 'Managing regional operations and analyzing system processes.',
+    description: 'Managing regional operations and streamlining workflows',
+    shortDescription: 'Managing regional operations and streamlining workflows, implementing automation across the organization to increase efficiency.',
     logo: Assets.Unknown, // Assuming you have a logo placeholder
     color: 'blue', // Assuming you have a Color enum or type
     location: 'Vancouver, British Columbia, Canada',
     contract: ContractType.FullTime,
     period: { from: new Date(2024, 4) }, // May 2024
     type: 'Management and Systems Analysis',
-    skills: getSkills('python'), // Assuming getSkills is a utility to fetch relevant skills
+    skills: getSkills('python', 'nodejs', 'ts', 'html', 'tailwind', 'css'), // Assuming getSkills is a utility to fetch relevant skills
     links: []
   },
   {
     slug: 'full-stack-developer',
     name: 'Full Stack Developer',
     company: 'Reva Solutions',
-    description: 'Developing full-stack applications using OpenText products and various technologies.',
-    shortDescription: 'Developing full-stack applications using OpenText products.',
+    description: 'Developing full-stack applications for enterprise content managment using various technologies. Including integrations with Opentext, Box, ServiceNow, and Salesforce ',
+    shortDescription: 'Developing full-stack applications specializing in enterprise content managment',
     logo: Assets.Unknown,
     color: 'orange',
     location: 'Vancouver, British Columbia, Canada',
-    contract: ContractType.Internship, // Assuming Co-op is handled under Internship
+    contract: ContractType.FullTime, // Assuming Co-op is handled under Internship
     period: { from: new Date(2023, 4, 1), to: new Date(2023, 11, 31) }, // May 2023 to Dec 2023
     type: 'Software Development',
-    skills: getSkills('python', 'opentext'),
+    skills: getSkills('python', 'js', 'reactjs', 'nodejs', 'deno'),
     links: []
   },
   {
     slug: 'instructor-leader',
     name: 'Instructor/Leader',
     company: 'Byte Camp',
-    description: 'Teaching and leading children in various programming camps.',
-    shortDescription: 'Teaching and leading children in programming camps.',
+    description: 'Teaching various concepts including OOP, data structures and algorithms and game design with inventive new techniques',
+    shortDescription: 'Teaching various concepts including OOP, data structures and algorithms',
     logo: Assets.Unknown,
     color: 'yellow',
     location: 'Nanaimo, British Columbia, Canada',
@@ -104,7 +104,7 @@ export const items: Array<Experience> = [
     slug: 'instructor',
     name: 'Instructor',
     company: 'Kumon North America, Inc.',
-    description: 'Tutoring children in mathematics and calculus.',
+    description: 'Tutoring children in mathematics and calculus. Providing one on one and general explainations of advanced math and calculus concepts.',
     shortDescription: 'Tutoring children in mathematics and calculus.',
     logo: Assets.Unknown,
     color: 'green',

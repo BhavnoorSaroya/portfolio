@@ -36,7 +36,7 @@
 					target="_blank"
 					rel="noreferrer"
 				>
-					<Icon icon={getPlatfromIcon(link.platform)} color={'var(--accent-text)'} size={'20px'} />
+					<Icon icon={getPlatfromIcon(link.platform)} color={'var(--accent-text)'} size={'27px'} />
 				</a>
 			{/each}
 		</div>

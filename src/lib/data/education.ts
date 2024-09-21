@@ -3,15 +3,15 @@ import type { Education } from '../types';
 
 export const items: Array<Education> = [
 	{
-		degree: 'Bachelor degree of Computer Science',
+		degree: 'BsC Computer Science',
 		description: '',
 		location: 'BC, Canada',
 		logo: Assets.Unknown,
 		name: '',
 		organization: 'British Columbia Institute of Technology',
-		period: { from: new Date(2020, 0, 1), to: new Date(2022, 5, 1) },
-		shortDescription: '',
-		slug: 'dummy-education-item',
+		period: { from: new Date(2022, 8, 1) },
+		shortDescription: 'Specialization in programming paradigms',
+		slug: 'educational-experience',
 		subjects: [
 			'C',
 			'Algorithms and Data structures',

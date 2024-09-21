@@ -75,6 +75,11 @@
 										{computeExactDuration(education.period.from, education.period.to)}
 									</div>
 									<CardDivider />
+									<div class="row items-center gap-2">
+										<UIcon icon="i-carbon-book" />
+										{education.shortDescription}
+									</div>
+									<CardDivider />
 								</div>
 								<div class="row flex-wrap gap-1">
 									{#each education.subjects as subject}
