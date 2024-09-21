@@ -3,7 +3,7 @@ import type { Education } from '../types';
 
 export const items: Array<Education> = [
 	{
-		degree: 'BsC Computer Science',
+		degree: 'BSc Computer Science',
 		description: '',
 		location: 'BC, Canada',
 		logo: Assets.Unknown,
