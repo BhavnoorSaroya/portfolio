@@ -1,6 +1,7 @@
 import Assets from './assets';
 import { getSkills } from './skills';
 import { ContractType, type Experience } from '../types';
+import { description } from './home';
 
 // export const items: Array<Experience> = [
 // 	{
@@ -59,8 +60,8 @@ export const items: Array<Experience> = [
     slug: 'regional-manager-systems-analyst',
     name: 'Regional Manager and Systems Analyst',
     company: 'Byte Camp',
-    description: 'Managing regional operations and streamlining workflows',
-    shortDescription: 'Managing regional operations and streamlining workflows, implementing automation across the organization to increase efficiency.',
+    description: 'Managed large team, handled conflicts. Oversaw software deployment and provided support to employees in the field.',
+    shortDescription: 'Managed large team, handled conflicts. Oversaw software deployment and provided support to employees in the field.',
     logo: Assets.Unknown, // Assuming you have a logo placeholder
     color: 'blue', // Assuming you have a Color enum or type
     location: 'Vancouver, British Columbia, Canada',
