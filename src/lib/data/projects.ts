@@ -1,8 +1,19 @@
 import Assets from './assets';
 import { getSkills } from './skills';
 import type { Project } from '../types';
+
 import garaageSs from '$lib/projects/img/garaage-home.png';
 import mikaAi from '$lib/projects/img/mik-ai.png';
+import baajDash from '$lib/projects/img/baaj-dashboard.png';
+import baajLive from '$lib/projects/img/baaj-live.png';
+import baajReport from '$lib/projects/img/baaj-reports.png';
+import garaageThumb from '$lib/projects/img/garaage-thumbnail.jpg';
+import oraHome from '$lib/projects/img/ora-home.png';
+import oraTask from '$lib/projects/img/ora-edit_task.png';
+import oraCalendar from '$lib/projects/img/ora-calendar.png';
+import oraProfile from '$lib/projects/img/ora-profile.png';
+import oraTaskCreate from '$lib/projects/img/ora-create_task.png';
+
 
 export const items: Array<Project> = [
 	{
@@ -20,18 +31,122 @@ export const items: Array<Project> = [
 			from: new Date()
 		},
 		skills: getSkills('flutter', 'dart', 'angular', 'firebase'),
-		type: 'Mobile Application',
+		type: 'AI powered Mobile Application',
+		screenshots: [
+			{
+				label: 'Garaage home screen',
+				src: garaageThumb
+			},
+			{
+				label: 'Garaage home screen',
+				src: garaageSs
+			},
+			{
+				label: 'mika ai',
+				src: mikaAi
+			},
+		]
+	},
+	
+	{
+		slug: 'ora',
+		color: '#0070f3',
+		description: `Ora is a time management platform that helps users organize tasks, manage deadlines, and stay on top of assignments. It uses AI to reorganize work and assist with assignment completion.`,
+		shortDescription: 'AI-powered workflow supervisor application.',
+		links: [
+			{ to: 'https://youtu.be/Gm644fFPYi8?si=p6-yP1S618dfNekS', label: 'youtube' }, 
+			{ to: 'https://github.com/noufilsaqib/qds_hacks_2024', label: 'github' }
+		],
+		logo: Assets.ReactJs,
+		name: 'Ora',
+		period: {
+			from: new Date()
+		},
+		skills: getSkills( 'react', 'tailwind', 'css', 'js', 'mongodb'),
+		type: 'AI Workflow Manager',
+		screenshots: [
+			{
+				label: 'Ora main interface',
+				src: oraHome
+			}, 
+			{
+				label: 'Ora task editor',
+				src: oraTask
+			},
+			{
+				label: 'Ora calendar',
+				src: oraCalendar
+			},
+			{
+				label: 'Ora profile page',
+				src: oraProfile
+			},
+			{
+				label: 'Ora task creation',
+				src: oraTaskCreate
+			}
+		]
+	},
+	{
+		slug: 'baaj',
+		color: '#34A853',
+		description: `Baaj is an AI monitoring system deployed in YVR airport. It uses Google Coral Edge TPU to run image inference on camera feeds to detect abandoned bags, spills, and emergencies. It sends notifications based on event priority, ensuring prompt responses to incidents.`,
+		shortDescription: 'AI-powered monitoring system for airports.',
+		links: [
+			{ to: 'https://commons.bcit.ca/news/2024/05/yvr-hackathon-2024/', label: 'BCIT' }, 
+			{ to: 'https://github.com/BhavnoorSaroya/YVR-Baaj', label: 'Github' }
+		],
+		logo: Assets.Python,
+		name: 'Baaj',
+		period: {
+			from: new Date()
+		},
+		skills: getSkills('python', 'flask', 'react', 'tensorflow', 'coral', 'ts', 'reactjs'),
+		type: 'AI Monitoring System',
+		screenshots: [
+			{
+				label: 'Baaj dashboard',
+				src: baajDash
+			},
+			{
+				label: 'Baaj live monitoring',
+				src: baajLive
+			},
+			{
+				label: 'Baaj reporting system',
+				src: baajReport
+			}
+		]
+	}, 
+	{
+		slug: 'teck-mining-prediction',
+		color: '#1E88E5',
+		description: `During QDS Hacks 2023, we built a powerful application for the mining company Teck. The application leverages truck data to predict and monitor activity. By mapping the routes trucks take from shovels to dumps, we can identify routes with better fuel efficiency, predict fuel consumption for different truck types, and detect routes prone to congestion.`,
+		shortDescription: 'Truck data-driven prediction and monitoring system for Teck mining.',
+		links: [
+			// { to: 'https://youtu.be/your_youtube_demo_link', label: 'youtube' }, 
+			{ to: 'https://github.com/christietsang/EnviLabs-Hackathon', label: 'github' }
+		],
+		logo: Assets.PostgreSQL, // Replace with the appropriate logo
+		name: 'Teck Mining Prediction',
+		period: {
+			from: new Date(), 
+		},
+		skills: getSkills('reactjs', 'nodejs', 'python', 'mongodb', 'tensorflow', 'js'),
+		type: 'Predictive Analytics Application',
 		// screenshots: [
 		// 	{
-		// 		label: 'Garaage home screen',
-		// 		src: garaageSs
-		// 	},
+		// 		label: 'Teck Mining Dashboard',
+		// 		src: teckDashboard
+		// 	}, 
 		// 	{
-		// 		label: 'mika ai',
-		// 		src: mikaAi
+		// 		label: 'Truck Route Analysis',
+		// 		src: truckRoute
 		// 	},
+		
 		// ]
-	},
+	}
+	,
 	{
 		slug: 'slick-portfolio-svelte',
 		color: '#ff3e00',
@@ -48,45 +163,22 @@ export const items: Array<Project> = [
 
 	},
 	{
-		slug: 'ora',
-		color: '#0070f3',
-		description: `Ora is a time management platform that helps users organize tasks, manage deadlines, and stay on top of assignments. It uses AI to reorganize work and assist with assignment completion.`,
-		shortDescription: 'AI-powered workflow and time management app.',
-		links: [{ to: 'https://youtu.be/Gm644fFPYi8?si=p6-yP1S618dfNekS', label: 'youtube' }],
-		logo: Assets.ReactJs,
-		name: 'Ora',
+		slug: 'resume-roaster',
+		color: '#874ba0',
+		description: 'My first ever AI powered application, created just days after the release of the openai api, the application uses the openai api to improve the quality of resumes by providing suggestions and improvements, the application is built using minimal bootstrap and nodejs, the idea was to keep it lightweight. The entire application was developed in just 16 hours by 3 developers.',
+		shortDescription: 'A resume improvment tool that allows the user to input their resume and get suggestions on how to improve it.',
+		links: [
+			// { to: 'https://github.com/BhavnoorSaroya/Garaage', label: 'GitHub' }
+		],
+		logo: Assets.JavaScript,
+		name: 'ResumAI',
 		period: {
 			from: new Date()
 		},
-		skills: getSkills('nextjs', 'react', 'tailwind', 'css', 'js', 'mongodb'),
-		type: 'AI Workflow Manager',
-		// screenshots: [
-		// 	{
-		// 		label: 'Ora main interface',
-		// 		src: '/path/to/ora_image.png' // Replace with actual path
-		// 	}
-		// ]
+		skills: getSkills('js', 'css', 'nodejs', 'sass'),
+		type: 'Web application',
+
 	},
-	{
-		slug: 'baaj',
-		color: '#34A853',
-		description: `Baaj is an AI monitoring system deployed in YVR airport. It uses Google Coral Edge TPU to run image inference on camera feeds to detect abandoned bags, spills, and emergencies. It sends notifications based on event priority, ensuring prompt responses to incidents.`,
-		shortDescription: 'AI-powered monitoring system for airports.',
-		links: [{ to: 'https://commons.bcit.ca/news/2024/05/yvr-hackathon-2024/', label: 'BCIT' }],
-		logo: Assets.Python,
-		name: 'Baaj',
-		period: {
-			from: new Date()
-		},
-		skills: getSkills('python', 'flask', 'react', 'tensorflow', 'coral', 'ts'),
-		type: 'AI Monitoring System',
-		// screenshots: [
-		// 	{
-		// 		label: 'Baaj interface',
-		// 		src: '/path/to/baaj_image.png' // Replace with actual path
-		// 	}
-		// ]
-	}
 ];
 
 

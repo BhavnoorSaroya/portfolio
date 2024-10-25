@@ -38,7 +38,7 @@ export const items = [
 	defineSkill({
 		slug: 'js',
 		color: 'yellow',
-		description: 'JavaScript is a versatile programming language...',
+		description: 'JavaScript is the language of the web, used to build interactive and dynamic web applications. It is a high-level, interpreted programming language that conforms to the ECMAScript specification.',
 		logo: Assets.JavaScript,
 		name: 'Javascript',
 		category: 'pro-lang'
@@ -54,7 +54,7 @@ export const items = [
 	defineSkill({
 		slug: 'dart',
 		color: 'cyan',
-		description: 'Dart is a client-optimized language for fast apps on any platform...',
+		description: 'Dart is a client-optimized language for fast apps that can deploy to any platform...',
 		logo: Assets.Dart,
 		name: 'Dart',
 		category: 'pro-lang'
@@ -78,7 +78,7 @@ export const items = [
 	defineSkill({
 		slug: 'rust',
 		color: 'brown',
-		description: 'Rust is a systems programming language focused on safety, speed, and concurrency...',
+		description: 'Rust is an extemely effient and fast systems programming language focused on safety, speed, and concurrency.',
 		logo: Assets.Rust,
 		name: 'Rust',
 		category: 'pro-lang'
@@ -442,6 +442,14 @@ export const items = [
 		logo: Assets.Illustrator,
 		name: 'Adobe Illustrator',
 		category: 'design'
+	}),
+	defineSkill({
+		slug: 'elixir',
+		color: 'purple',
+		description: 'Elixir is a functional, concurrent, high-level general-purpose programming language that runs on the BEAM virtual machine. Known for creating low-latency, distributed, and fault-tolerant systems.',
+		logo: Assets.Elixir,
+		name: 'Elixir',
+		category: 'pro-lang'
 	}),
 
 

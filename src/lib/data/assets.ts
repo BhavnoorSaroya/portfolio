@@ -75,6 +75,7 @@ const Assets = {
 	TensorFlow: a('tensorflow.svg'),
 	Coral: a('coral.png'),
 	Nextjs: a('nextjs.svg', 'nextjs-dark.svg'),
+	Elixir: a('Elixir-Logo.png'),
 };
 
 export default Assets;

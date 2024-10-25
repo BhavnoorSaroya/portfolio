@@ -24,6 +24,7 @@
 		</div>
 	{:else}
 		<div class="col mt-5 gap-7">
+			<div><p>Here are just some of the languages and frameworks I specialize in, this list grows too fast to keep updated!</p></div>
 			{#each result as group (group.category.slug)}
 				<div class="col gap-5 mb-7">
 					<div class="row items-center gap-5">
