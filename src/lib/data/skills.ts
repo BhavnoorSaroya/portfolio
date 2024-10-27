@@ -243,6 +243,22 @@ export const items = [
 		name: 'Express JS',
 		category: 'framework'
 	}),
+	defineSkill({
+		slug: 'fastapi',
+		color: 'green', 
+		description: "", 
+		logo: Assets.FastApi, 
+		name: "FastApi",
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'phoenix',
+		color: 'orange', 
+		description: "Phoenix is used to Build rich, interactive web applications quickly, with less code and fewer moving parts",
+		logo: Assets.Phoenix,
+		name: "Phoenix",
+		category: 'framework'
+	}),
 	// defineSkill({
 	// 	slug: 'hono',
 	// 	color: 'orange',
@@ -411,30 +427,30 @@ export const items = [
 		name: 'Tailwind',
 		category: 'design'
 	}),
-	defineSkill({
-		slug: 'photoshop',
-		color: 'blue',
-		description: 'Adobe Photoshop is a raster graphics editor developed by Adobe...',
-		logo: Assets.Photoshop,
-		name: 'Adobe Photoshop',
-		category: 'design'
-	}),
-	defineSkill({
-		slug: 'after-effects',
-		color: 'blue',
-		description: 'Adobe After Effects is a digital visual effects, motion graphics, and compositing application...',
-		logo: Assets.AfterEffects,
-		name: 'Adobe After Effects',
-		category: 'design'
-	}),
-	defineSkill({
-		slug: 'premiere',
-		color: 'blue',
-		description: 'Adobe Premiere Pro is a timeline-based video editing software application...',
-		logo: Assets.Premiere,
-		name: 'Adobe Premiere',
-		category: 'design'
-	}),
+	// defineSkill({
+	// 	slug: 'photoshop',
+	// 	color: 'blue',
+	// 	description: 'Adobe Photoshop is a raster graphics editor developed by Adobe...',
+	// 	logo: Assets.Photoshop,
+	// 	name: 'Adobe Photoshop',
+	// 	category: 'design'
+	// }),
+	// defineSkill({
+	// 	slug: 'after-effects',
+	// 	color: 'blue',
+	// 	description: 'Adobe After Effects is a digital visual effects, motion graphics, and compositing application...',
+	// 	logo: Assets.AfterEffects,
+	// 	name: 'Adobe After Effects',
+	// 	category: 'design'
+	// }),
+	// defineSkill({
+	// 	slug: 'premiere',
+	// 	color: 'blue',
+	// 	description: 'Adobe Premiere Pro is a timeline-based video editing software application...',
+	// 	logo: Assets.Premiere,
+	// 	name: 'Adobe Premiere',
+	// 	category: 'design'
+	// }),
 	defineSkill({
 		slug: 'illustrator',
 		color: 'orange',
@@ -527,6 +543,9 @@ export const title = 'Skills';
 export const getSkills = (
 	...slugs: Array<StringWithAutoComplete<(typeof items)[number]['slug']>>
 ): Array<Skill> => items.filter((it) => slugs.includes(it.slug));
+
+export const getAllSkills = (): Array<Skill> => items;
+
 
 export const groupByCategory = (
 	query: string

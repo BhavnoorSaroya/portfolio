@@ -1,5 +1,5 @@
 import { Platform } from '$lib/types';
-import { getSkills } from './skills';
+import { getAllSkills, getSkills } from './skills';
 
 export const title = 'Home';
 
@@ -39,8 +39,10 @@ export const links: Array<{ platform: Platform; link: string }> = [
     // }
 ];
 
+export const skills = getAllSkills()
+
 export const skillss = getSkills('js', 'css', 'html', 'reactjs', 'sass', 'svelte', 'ts');
-export const skills = getSkills(
+export const oldskills = getSkills(
     'js',             // JavaScript
     'ts',             // TypeScript
     'dart',           // Dart

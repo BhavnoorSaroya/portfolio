@@ -14,7 +14,7 @@ const Assets = {
 	Cpp: a('cpp.svg'),
 	Celery: a('celery.svg'),
 	Django: a('django.svg'),
-	FastApi: a('fastapi'),
+	FastApi: a('fastapi.png'),
 	Flask: a('flask.svg'),
 	Go: a('go.svg'),
 	Kafka: a('kafka.svg'),
@@ -41,7 +41,7 @@ const Assets = {
 	Svelte: a('svelte.png'),
 	ExpressJs: a('express.png'),
 	JavaScript: a('js.png'),
-	Fastify: a('fastify.svg', 'fastify.svg'),
+	Fastify: a('fastify.svg'),
 	NestJs: a('nest.svg'),
 	Quasar: a('quasar.svg'),
 	SolidJs: a('solid.svg'),
@@ -74,8 +74,10 @@ const Assets = {
 	Ocaml: a('ocaml.svg'),
 	TensorFlow: a('tensorflow.svg'),
 	Coral: a('coral.png'),
-	Nextjs: a('nextjs.svg', 'nextjs-dark.svg'),
+	Nextjs: a('nextjs-lightmode.png', 'nextjs-dark.png'),
 	Elixir: a('Elixir-Logo.png'),
+	Phoenix: a('phoenix.png')
+
 };
 
 export default Assets;
