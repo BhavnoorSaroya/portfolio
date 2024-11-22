@@ -57,6 +57,21 @@ import { description } from './home';
 
 export const items: Array<Experience> = [
   {
+    slug: 'full-stack-dev',
+    name: 'Software Developer',
+    company: 'Byte Camp',
+    description: 'Designing, implementing and deploying a new content hosting and managment platform in house. ',
+    shortDescription: 'Designing, implementing and deploying a new content hosting and managment platform in house. Also built a an api for other internal applications to connect into the new service.',
+    logo: Assets.Unknown, // Assuming you have a logo placeholder
+    color: 'blue', // Assuming you have a Color enum or type
+    location: 'Vancouver, British Columbia, Canada',
+    contract: ContractType.FullTime,
+    period: { from: new Date(2024, 9) }, // September 2024
+    type: 'Software Development',
+    skills: getSkills('python', 'nodejs', 'ts', 'js', 'bun',  'html', 'tailwind', 'css'), // Assuming getSkills is a utility to fetch relevant skills
+    links: []
+  },
+  {
     slug: 'regional-manager-systems-analyst',
     name: 'Regional Manager and Systems Analyst',
     company: 'Byte Camp',
@@ -68,7 +83,7 @@ export const items: Array<Experience> = [
     contract: ContractType.FullTime,
     period: { from: new Date(2024, 4) }, // May 2024
     type: 'Management and Systems Analysis',
-    skills: getSkills('python', 'nodejs', 'ts', 'html', 'tailwind', 'css'), // Assuming getSkills is a utility to fetch relevant skills
+    skills: getSkills('python', 'nodejs', 'ts', 'html', 'css'), // Assuming getSkills is a utility to fetch relevant skills
     links: []
   },
   {
