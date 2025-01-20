@@ -13,9 +13,40 @@ import oraTask from '$lib/projects/img/ora-edit_task.png';
 import oraCalendar from '$lib/projects/img/ora-calendar.png';
 import oraProfile from '$lib/projects/img/ora-profile.png';
 import oraTaskCreate from '$lib/projects/img/ora-create_task.png';
+import omniDash from '$lib/projects/img/omni-dash.jpg';
+import omniDevice from '$lib/projects/img/omni-devices.jpg';
+import omniAutomation from '$lib/projects/img/omni-automation.jpg';
 
 
 export const items: Array<Project> = [
+	{
+		slug: 'OMNI',
+		color: '#0070f3',
+		description: `Smart homes today are fragmented, with various standards, proprietary AI solutions, and cloud-dependent systems that compromise security and privacy. Omni was born out of a desire to simplify the smart home experience, offering seamless integration, robust local control, and cutting-edge features like gesture-based interaction and presence detection. All while prioritizing privacy, security, and reliability`,
+		shortDescription: 'Accessible ai meets the smart home, its time to make your home smarter, privacy first, and run locally on your devices.',
+		links: [{ to: 'https://github.com/noufilsaqib/omni', label: 'GitHub' }],
+		logo: Assets.Rust,
+		name: 'OMNI',
+		period: {
+			from: new Date()
+		},
+		skills: getSkills('python', 'reactjs', 'ts', 'postgres', 'rust', 'kotlin'),
+		type: 'Smart home platform',
+		screenshots: [
+			{
+				label: 'OMNI dashboard',
+				src: omniDash
+			},
+			{
+				label: 'device page',
+				src: omniDevice
+			},
+			{
+				label: 'automations page',
+				src: omniAutomation
+			},
+		]
+	},
 	{
 		slug: 'garaage',
 		color: '#FFA500',
@@ -47,14 +78,14 @@ export const items: Array<Project> = [
 			},
 		]
 	},
-	
+
 	{
 		slug: 'ora',
 		color: '#0070f3',
 		description: `Ora is a time management platform that helps users organize tasks, manage deadlines, and stay on top of assignments. It uses AI to reorganize work and assist with assignment completion.`,
 		shortDescription: 'AI-powered workflow supervisor application.',
 		links: [
-			{ to: 'https://youtu.be/Gm644fFPYi8?si=p6-yP1S618dfNekS', label: 'youtube' }, 
+			{ to: 'https://youtu.be/Gm644fFPYi8?si=p6-yP1S618dfNekS', label: 'youtube' },
 			{ to: 'https://github.com/noufilsaqib/qds_hacks_2024', label: 'github' }
 		],
 		logo: Assets.ReactJs,
@@ -62,13 +93,13 @@ export const items: Array<Project> = [
 		period: {
 			from: new Date()
 		},
-		skills: getSkills( 'react', 'tailwind', 'css', 'js', 'mongodb'),
+		skills: getSkills('react', 'tailwind', 'css', 'js', 'mongodb'),
 		type: 'AI Workflow Manager',
 		screenshots: [
 			{
 				label: 'Ora main interface',
 				src: oraHome
-			}, 
+			},
 			{
 				label: 'Ora task editor',
 				src: oraTask
@@ -93,7 +124,7 @@ export const items: Array<Project> = [
 		description: `Baaj is an AI monitoring system deployed in YVR airport. It uses Google Coral Edge TPU to run image inference on camera feeds to detect abandoned bags, spills, and emergencies. It sends notifications based on event priority, ensuring prompt responses to incidents.`,
 		shortDescription: 'AI-powered monitoring system for airports.',
 		links: [
-			{ to: 'https://commons.bcit.ca/news/2024/05/yvr-hackathon-2024/', label: 'BCIT' }, 
+			{ to: 'https://commons.bcit.ca/news/2024/05/yvr-hackathon-2024/', label: 'BCIT' },
 			{ to: 'https://github.com/BhavnoorSaroya/YVR-Baaj', label: 'Github' }
 		],
 		logo: Assets.Python,
@@ -117,7 +148,7 @@ export const items: Array<Project> = [
 				src: baajReport
 			}
 		]
-	}, 
+	},
 	{
 		slug: 'teck-mining-prediction',
 		color: '#1E88E5',
@@ -130,7 +161,7 @@ export const items: Array<Project> = [
 		logo: Assets.PostgreSQL, // Replace with the appropriate logo
 		name: 'Teck Mining Prediction',
 		period: {
-			from: new Date(), 
+			from: new Date(),
 		},
 		skills: getSkills('reactjs', 'nodejs', 'python', 'mongodb', 'tensorflow', 'js'),
 		type: 'Predictive Analytics Application',
@@ -143,7 +174,7 @@ export const items: Array<Project> = [
 		// 		label: 'Truck Route Analysis',
 		// 		src: truckRoute
 		// 	},
-		
+
 		// ]
 	}
 	,
