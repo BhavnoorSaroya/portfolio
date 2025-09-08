@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let downloadLink = 'iso-host.fly.dev/ubuntu-custom.iso';
+	export let downloadLink = '/bytecampubuntu';
 	export let changelog = [
 		'Updated to Ubuntu 24 LTS.',
 		'Extra apps are now hidden',
