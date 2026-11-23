@@ -18,7 +18,7 @@ const config = {
 		adapter: adapter({
 			// Optional: If you want client-side routing fallback
 			// (good for SPAs deployed on Nginx, Vercel, Netlify, etc.)
-			fallback: 'index.html'
+			fallback: '200.html'
 		}),
 		alias: {
 			$lib: './src/lib',

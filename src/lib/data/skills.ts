@@ -9,7 +9,7 @@ const categories = [
 	defineSkillCategory({ name: 'Programming Languages', slug: 'pro-lang' }),
 	defineSkillCategory({ name: 'Frameworks', slug: 'framework' }),
 	defineSkillCategory({ name: 'Libraries', slug: 'library' }),
-	defineSkillCategory({ name: 'Langauges', slug: 'lang' }),
+	defineSkillCategory({ name: 'Languages', slug: 'lang' }),
 	defineSkillCategory({ name: 'Databases', slug: 'db' }),
 	defineSkillCategory({ name: 'ORMs', slug: 'orm' }),
 	defineSkillCategory({ name: 'DevOps', slug: 'devops' }),
@@ -17,7 +17,11 @@ const categories = [
 	defineSkillCategory({ name: 'Dev Tools', slug: 'devtools' }),
 	defineSkillCategory({ name: 'Markup & Style', slug: 'markup-style' }),
 	defineSkillCategory({ name: 'Design', slug: 'design' }),
-	defineSkillCategory({ name: 'Soft Skills', slug: 'soft' })
+	defineSkillCategory({ name: 'Soft Skills', slug: 'soft' }),
+	defineSkillCategory({ name: 'Networking', slug: 'networking' }),
+	defineSkillCategory({ name: 'Data & Analytics', slug: 'data' }),
+	defineSkillCategory({ name: 'Integrations', slug: 'integration' }),
+	defineSkillCategory({ name: 'Device Management', slug: 'mdm' })
 ] as const;
 
 const defineSkill = <S extends string>(
@@ -132,12 +136,13 @@ export const items = [
 		category: 'library'
 	}),
 	defineSkill({
-		slug: "nextjs",
-		color: "white",
-		description: "The React Framework for the Web. Used by some of the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components. Svelte shifts as much work as possible out of the browser and into your build step. No more manual optimisations — just faster, more efficient apps.",
+		slug: 'nextjs',
+		color: 'black',
+		description:
+			'Next.js is the React framework for building production web applications, with server-side rendering, static generation, routing, and API routes.',
 		logo: Assets.Nextjs,
-		name: "NextJS",
-		category: "library",
+		name: 'Next.js',
+		category: 'framework'
 	}),
 	defineSkill({
 		slug: 'reactjs',
@@ -246,7 +251,7 @@ export const items = [
 	defineSkill({
 		slug: 'fastapi',
 		color: 'green', 
-		description: "", 
+		description: 'FastAPI is a modern, high-performance Python web framework for building APIs with type hints, validation, and automatic OpenAPI documentation.', 
 		logo: Assets.FastApi, 
 		name: "FastApi",
 		category: 'framework'
@@ -313,7 +318,7 @@ export const items = [
 		description: 'Ai models designed to run on a variety of devices',
 		logo: Assets.TensorFlow,
 		name: "TensorFlow",
-		category: 'tooling'
+		category: 'devtools'
 	}),
 	defineSkill({
 		slug: 'coral',
@@ -353,7 +358,7 @@ export const items = [
 		description: 'Vite is a build tool that aims to provide a faster and leaner development experience for modern web projects...',
 		logo: Assets.Vite,
 		name: 'Vite',
-		category: 'tooling'
+		category: 'devtools'
 	}),
 	defineSkill({
 		slug: 'vitest',
@@ -361,7 +366,7 @@ export const items = [
 		description: 'Vitest is a blazing fast unit testing framework powered by Vite...',
 		logo: Assets.Vitest,
 		name: 'Vitest',
-		category: 'tooling'
+		category: 'devtools'
 	}),
 	defineSkill({
 		slug: 'jest',
@@ -369,7 +374,7 @@ export const items = [
 		description: 'Jest is a delightful JavaScript Testing Framework with a focus on simplicity...',
 		logo: Assets.Jest,
 		name: 'Jest',
-		category: 'tooling'
+		category: 'devtools'
 	}),
 	// defineSkill({
 	// 	slug: 'playwright',
@@ -377,7 +382,7 @@ export const items = [
 	// 	description: 'Playwright is a framework for Web Testing and Automation, used to test modern web apps across all browsers...',
 	// 	logo: Assets.Playwright,
 	// 	name: 'Playwright',
-	// 	category: 'tooling'
+	// 	category: 'devtools'
 	// }),
 	defineSkill({
 		slug: 'html',
@@ -385,7 +390,7 @@ export const items = [
 		description: 'HTML (HyperText Markup Language) is the standard markup language for creating web pages...',
 		logo: Assets.HTML,
 		name: 'HTML',
-		category: 'markup'
+		category: 'markup-style'
 	}),
 	defineSkill({
 		slug: 'css',
@@ -401,7 +406,7 @@ export const items = [
 	// 	description: 'PostCSS is a tool for transforming CSS with JavaScript plugins...',
 	// 	logo: Assets.PostCSS,
 	// 	name: 'PostCSS',
-	// 	category: 'markup'
+	// 	category: 'markup-style'
 	// }),
 	// defineSkill({
 	// 	slug: 'unocss',
@@ -409,7 +414,7 @@ export const items = [
 	// 	description: 'UnoCSS is a fast and highly customizable utility-first CSS framework...',
 	// 	logo: Assets.UnoCSS,
 	// 	name: 'UnoCSS',
-	// 	category: 'markup'
+	// 	category: 'markup-style'
 	// }),
 	defineSkill({
 		slug: 'sass',
@@ -467,7 +472,510 @@ export const items = [
 		name: 'Elixir',
 		category: 'pro-lang'
 	}),
-
+	defineSkill({
+		slug: 'csharp',
+		color: 'purple',
+		description: 'C# is a modern, object-oriented language from Microsoft used to build .NET applications, services, and distributed systems.',
+		logo: Assets.Csharp,
+		name: 'C#',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'cpp',
+		color: 'blue',
+		description: 'C++ is a high-performance systems and application language with object-oriented and generic programming features.',
+		logo: Assets.Cpp,
+		name: 'C++',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'c',
+		color: 'blue',
+		description: 'C is a low-level, general-purpose language used for systems programming, operating systems, and performance-critical software.',
+		logo: Assets.C,
+		name: 'C',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'ruby',
+		color: 'red',
+		description: 'Ruby is a dynamic, object-oriented language known for readable syntax and the Ruby on Rails web framework.',
+		logo: Assets.Ruby,
+		name: 'Ruby',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'php',
+		color: 'indigo',
+		description: 'PHP is a widely used server-side scripting language for building dynamic websites and web applications.',
+		logo: Assets.PHP,
+		name: 'PHP',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'sql',
+		color: 'teal',
+		description: 'SQL is the standard language for querying and managing relational databases, including schema design, joins, and analytics.',
+		logo: Assets.Sql,
+		name: 'SQL',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'bash',
+		color: 'green',
+		description: 'Bash is a Unix shell and scripting language used to automate system administration, deployment, and infrastructure tasks.',
+		logo: Assets.Bash,
+		name: 'Bash / Shell',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'react-native',
+		color: 'cyan',
+		description: 'React Native builds native mobile applications for iOS and Android using React and JavaScript or TypeScript.',
+		logo: Assets.ReactNative,
+		name: 'React Native',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'expo',
+		color: 'black',
+		description: 'Expo is a framework and toolchain that simplifies building, testing, and deploying React Native applications.',
+		logo: Assets.Expo,
+		name: 'Expo',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'rails',
+		color: 'red',
+		description: 'Ruby on Rails is a full-stack web framework that emphasizes convention over configuration and rapid application development.',
+		logo: Assets.Rails,
+		name: 'Ruby on Rails',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'spring',
+		color: 'green',
+		description: 'Spring is a Java framework for building enterprise applications and services, including dependency injection and web APIs.',
+		logo: Assets.Spring,
+		name: 'Spring',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'dotnet',
+		color: 'purple',
+		description: '.NET is a cross-platform framework and runtime from Microsoft for building applications and services in C# and other languages.',
+		logo: Assets.Dotnet,
+		name: '.NET',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'orleans',
+		color: 'blueviolet',
+		description: '.NET Orleans is a framework for building distributed, scalable, fault-tolerant applications using virtual actors.',
+		logo: Assets.Orleans,
+		name: '.NET Orleans',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'liveview',
+		color: 'orange',
+		description: 'Phoenix LiveView enables rich, real-time user interfaces in Elixir without writing much client-side JavaScript.',
+		logo: Assets.Phoenix,
+		name: 'Phoenix LiveView',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'flask',
+		color: 'black',
+		description: 'Flask is a lightweight Python web framework for building APIs and web applications with minimal boilerplate.',
+		logo: Assets.Flask,
+		name: 'Flask',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'mysql',
+		color: 'orange',
+		description: 'MySQL is a popular open-source relational database used for transactional web applications and reporting.',
+		logo: Assets.MySQL,
+		name: 'MySQL',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'mariadb',
+		color: 'brown',
+		description: 'MariaDB is an open-source relational database that is compatible with MySQL and used for application data storage.',
+		logo: Assets.MariaDB,
+		name: 'MariaDB',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'oracle',
+		color: 'red',
+		description: 'Oracle Database is an enterprise relational database system used for large-scale transactional and analytical workloads.',
+		logo: Assets.Oracle,
+		name: 'Oracle Database',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'mssql',
+		color: 'red',
+		description: 'Microsoft SQL Server is a relational database management system used for enterprise data and application workloads.',
+		logo: Assets.Mssql,
+		name: 'SQL Server',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'linux',
+		color: 'orange',
+		description: 'Linux is an open-source operating system kernel and ecosystem used for servers, development, and embedded systems.',
+		logo: Assets.Linux,
+		name: 'Linux',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'ubuntu',
+		color: 'orange',
+		description: 'Ubuntu is a Debian-based Linux distribution widely used for servers, desktops, and cloud infrastructure.',
+		logo: Assets.Ubuntu,
+		name: 'Ubuntu',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'alpine',
+		color: 'blue',
+		description: 'Alpine Linux is a lightweight Linux distribution commonly used for containers and minimal system deployments.',
+		logo: Assets.Alpine,
+		name: 'Alpine Linux',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'kubernetes',
+		color: 'blue',
+		description: 'Kubernetes is an open-source platform for automating deployment, scaling, and management of containerized applications.',
+		logo: Assets.Kubernetes,
+		name: 'Kubernetes',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'podman',
+		color: 'purple',
+		description: 'Podman is a daemonless container engine for building and running OCI containers and pods.',
+		logo: Assets.Podman,
+		name: 'Podman',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'docker-compose',
+		color: 'blue',
+		description: 'Docker Compose defines and runs multi-container Docker applications using a declarative YAML configuration.',
+		logo: Assets.Docker,
+		name: 'Docker Compose',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'aws',
+		color: 'orange',
+		description: 'Amazon Web Services provides cloud infrastructure and services, including compute, storage, networking, and managed databases.',
+		logo: Assets.AWS,
+		name: 'AWS',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'nginx',
+		color: 'green',
+		description: 'Nginx is a high-performance web server, reverse proxy, and load balancer used for serving and routing traffic.',
+		logo: Assets.Nginx,
+		name: 'Nginx',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'git',
+		color: 'orangered',
+		description: 'Git is a distributed version control system for tracking changes and collaborating on source code.',
+		logo: Assets.Git,
+		name: 'Git',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'cicd',
+		color: 'green',
+		description: 'CI/CD automates building, testing, and deploying software through continuous integration and delivery pipelines.',
+		logo: Assets.Cicd,
+		name: 'CI/CD',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'wireguard',
+		color: 'red',
+		description: 'WireGuard is a modern, high-performance VPN protocol used to build secure, encrypted network tunnels and meshes.',
+		logo: Assets.WireGuard,
+		name: 'WireGuard',
+		category: 'networking'
+	}),
+	defineSkill({
+		slug: 'tailscale',
+		color: 'blue',
+		description: 'Tailscale and Headscale provide mesh VPN networking built on WireGuard for secure device-to-device connectivity.',
+		logo: Assets.Tailscale,
+		name: 'Tailscale / Headscale',
+		category: 'networking'
+	}),
+	defineSkill({
+		slug: 'tcp-ip',
+		color: 'teal',
+		description: 'TCP/IP is the foundational networking protocol suite used for addressing, routing, and reliable data transport.',
+		logo: Assets.TcpIp,
+		name: 'TCP/IP',
+		category: 'networking'
+	}),
+	defineSkill({
+		slug: 'http',
+		color: 'blue',
+		description: 'HTTP and HTTPS are application-layer protocols for transferring data between clients and web servers.',
+		logo: Assets.Http,
+		name: 'HTTP/HTTPS',
+		category: 'networking'
+	}),
+	defineSkill({
+		slug: 'tls',
+		color: 'green',
+		description: 'TLS is a cryptographic protocol that secures network communication through encryption and certificate-based authentication.',
+		logo: Assets.Tls,
+		name: 'TLS',
+		category: 'networking'
+	}),
+	defineSkill({
+		slug: 'dns',
+		color: 'purple',
+		description: 'DNS translates domain names into IP addresses and provides the naming layer for internet and network services.',
+		logo: Assets.Dns,
+		name: 'DNS',
+		category: 'networking'
+	}),
+	defineSkill({
+		slug: 'load-balancing',
+		color: 'cyan',
+		description: 'Load balancing distributes network or application traffic across multiple servers to improve reliability and capacity.',
+		logo: Assets.LoadBalancing,
+		name: 'Load Balancing',
+		category: 'networking'
+	}),
+	defineSkill({
+		slug: 'proxies',
+		color: 'slateblue',
+		description: 'Proxies forward network requests between clients and servers, supporting routing, filtering, caching, and access control.',
+		logo: Assets.Proxies,
+		name: 'Proxies',
+		category: 'networking'
+	}),
+	defineSkill({
+		slug: 'sockets',
+		color: 'teal',
+		description: 'Sockets provide the programming interface for network communication between processes over TCP, UDP, and other protocols.',
+		logo: Assets.Sockets,
+		name: 'Sockets',
+		category: 'networking'
+	}),
+	defineSkill({
+		slug: 'playwright',
+		color: 'green',
+		description: 'Playwright is a browser automation framework for reliable end-to-end testing across Chromium, Firefox, and WebKit.',
+		logo: Assets.Playwright,
+		name: 'Playwright',
+		category: 'test'
+	}),
+	defineSkill({
+		slug: 'selenium',
+		color: 'green',
+		description: 'Selenium is a widely used framework for automating browsers and running web application tests.',
+		logo: Assets.Selenium,
+		name: 'Selenium',
+		category: 'test'
+	}),
+	defineSkill({
+		slug: 'rspec',
+		color: 'red',
+		description: 'RSpec is a behavior-driven testing framework for Ruby and Rails applications.',
+		logo: Assets.RSpec,
+		name: 'RSpec',
+		category: 'test'
+	}),
+	defineSkill({
+		slug: 'streamlit',
+		color: 'red',
+		description: 'Streamlit is a Python framework for building interactive data applications and dashboards quickly.',
+		logo: Assets.Streamlit,
+		name: 'Streamlit',
+		category: 'data'
+	}),
+	defineSkill({
+		slug: 'data-warehousing',
+		color: 'blue',
+		description: 'Data warehousing involves designing analytical stores with dimensional models and facts to support reporting and business intelligence.',
+		logo: Assets.DataWarehousing,
+		name: 'Data Warehousing',
+		category: 'data'
+	}),
+	defineSkill({
+		slug: 'etl',
+		color: 'purple',
+		description: 'ETL covers extracting, transforming, and loading data between systems to populate analytics and operational stores.',
+		logo: Assets.Etl,
+		name: 'ETL',
+		category: 'data'
+	}),
+	defineSkill({
+		slug: 'aws-bedrock',
+		color: 'orange',
+		description: 'AWS Bedrock provides managed access to foundation models for building generative AI applications.',
+		logo: Assets.AWS,
+		name: 'AWS Bedrock',
+		category: 'data'
+	}),
+	defineSkill({
+		slug: 'servicenow',
+		color: 'green',
+		description: 'ServiceNow is an enterprise platform for IT service management, workflows, and business process automation.',
+		logo: Assets.ServiceNow,
+		name: 'ServiceNow',
+		category: 'integration'
+	}),
+	defineSkill({
+		slug: 'box',
+		color: 'blue',
+		description: 'Box is a cloud content management platform used for secure file storage, sharing, and enterprise workflows.',
+		logo: Assets.Box,
+		name: 'Box',
+		category: 'integration'
+	}),
+	defineSkill({
+		slug: 'documentum',
+		color: 'blue',
+		description: 'Documentum D2 is an enterprise content management product for document control and business workflows.',
+		logo: Assets.Documentum,
+		name: 'Documentum D2',
+		category: 'integration'
+	}),
+	defineSkill({
+		slug: 'stripe',
+		color: 'indigo',
+		description: 'Stripe provides APIs for accepting payments, managing subscriptions, and handling financial transactions.',
+		logo: Assets.Stripe,
+		name: 'Stripe',
+		category: 'integration'
+	}),
+	defineSkill({
+		slug: 'shopify',
+		color: 'green',
+		description: 'Shopify is an e-commerce platform and API ecosystem for building and managing online stores.',
+		logo: Assets.Shopify,
+		name: 'Shopify',
+		category: 'integration'
+	}),
+	defineSkill({
+		slug: 'asterisk',
+		color: 'orange',
+		description: 'Asterisk is an open-source telephony framework for building voice, VoIP, and communication systems.',
+		logo: Assets.Asterisk,
+		name: 'Asterisk',
+		category: 'integration'
+	}),
+	defineSkill({
+		slug: 'intune',
+		color: 'blue',
+		description: 'Microsoft Intune is a cloud-based MDM and endpoint management platform for enrolling and securing devices.',
+		logo: Assets.Intune,
+		name: 'Microsoft Intune',
+		category: 'mdm'
+	}),
+	defineSkill({
+		slug: 'samsung-knox',
+		color: 'blue',
+		description: 'Samsung Knox provides device security and management capabilities for Samsung Android devices in enterprise fleets.',
+		logo: Assets.SamsungKnox,
+		name: 'Samsung Knox',
+		category: 'mdm'
+	}),
+	defineSkill({
+		slug: 'google-mdm',
+		color: 'blue',
+		description: 'Google MDM refers to Android enterprise device management services for enrolling and managing Android devices.',
+		logo: Assets.GoogleMdm,
+		name: 'Google MDM',
+		category: 'mdm'
+	}),
+	defineSkill({
+		slug: 'amapi',
+		color: 'green',
+		description: 'The Android Management API lets organizations provision, configure, and manage Android devices at scale.',
+		logo: Assets.Amapi,
+		name: 'Android Management API',
+		category: 'mdm'
+	}),
+	defineSkill({
+		slug: 'aosp',
+		color: 'green',
+		description: 'AOSP is the open-source Android platform codebase, used to build custom Android system images and device software.',
+		logo: Assets.Android,
+		name: 'AOSP',
+		category: 'mdm'
+	}),
+	defineSkill({
+		slug: 'android',
+		color: 'green',
+		description: 'Android is a mobile operating system and development platform for phones, tablets, and embedded devices.',
+		logo: Assets.Android,
+		name: 'Android',
+		category: 'mdm'
+	}),
+	defineSkill({
+		slug: 'english',
+		color: 'blue',
+		description: 'English is a native language, used for professional communication, documentation, and client support.',
+		logo: Assets.English,
+		name: 'English (Native)',
+		category: 'lang'
+	}),
+	defineSkill({
+		slug: 'punjabi',
+		color: 'orange',
+		description: 'Punjabi is a native language, used for communication and client support.',
+		logo: Assets.Punjabi,
+		name: 'Punjabi (Native)',
+		category: 'lang'
+	}),
+	defineSkill({
+		slug: 'hindi',
+		color: 'orange',
+		description: 'Hindi is spoken fluently for professional communication and client support.',
+		logo: Assets.Hindi,
+		name: 'Hindi (Fluent)',
+		category: 'lang'
+	}),
+	defineSkill({
+		slug: 'technical-leadership',
+		color: 'purple',
+		description: 'Technical leadership covers owning system design, guiding delivery, and aligning engineering work with business goals.',
+		logo: Assets.TechnicalLeadership,
+		name: 'Technical Leadership',
+		category: 'soft'
+	}),
+	defineSkill({
+		slug: 'mentoring',
+		color: 'teal',
+		description: 'Mentoring and onboarding involves coaching engineers, sharing context, and helping new team members become productive.',
+		logo: Assets.Mentoring,
+		name: 'Mentoring & Onboarding',
+		category: 'soft'
+	}),
+	defineSkill({
+		slug: 'event-management',
+		color: 'orange',
+		description: 'Event management includes planning, coordinating, and running technical events such as hackathons and workshops.',
+		logo: Assets.EventManagement,
+		name: 'Event Management',
+		category: 'soft'
+	})
 
 ];
 

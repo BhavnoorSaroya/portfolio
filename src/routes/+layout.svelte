@@ -13,7 +13,7 @@
 
 <div class={`body contents ${$theme ? 'theme-dark' : 'theme-light'}`}>
 	<NavMenu />
-	<div class="content container"><slot /></div>
+	<div class="content container">{#key $theme}<slot />{/key}</div>
 </div>
 
 <style lang="scss">

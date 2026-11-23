@@ -1,136 +1,123 @@
 import Assets from './assets';
 import { getSkills } from './skills';
 import { ContractType, type Experience } from '../types';
-import { description } from './home';
-
-// export const items: Array<Experience> = [
-// 	{
-// 		slug: 'open-sourcer',
-// 		company: 'Self-employed',
-// 		description: 'Creating awesome tools for developers.',
-// 		contract: ContractType.SelfEmployed,
-// 		type: 'Software Development',
-// 		location: 'Home',
-// 		period: { from: new Date() },
-// 		skills: getSkills('ts', 'js'),
-// 		name: 'Open Source Developer',
-// 		color: 'red',
-// 		links: [],
-// 		logo: Assets.Unknown,
-// 		shortDescription: 'Creating awesome tools for developers.'
-// 	},
-// 	{
-// 		slug: 'software-freelance',
-// 		company: 'Self-employed',
-// 		description: 'Creating awesome applications for customers.',
-// 		contract: ContractType.Freelance,
-// 		type: 'Software Development',
-// 		location: 'Home',
-// 		period: { from: new Date() },
-// 		skills: getSkills('svelte', 'ts', 'sass', 'css', 'html', 'js'),
-// 		name: 'Freelancer',
-// 		color: 'blue',
-// 		links: [],
-// 		logo: Assets.Unknown,
-// 		shortDescription: 'Creating awesome applications for customers.'
-// 	},
-// 	{
-// 		slug: 'software-freelance-junior',
-// 		company: 'Self-employed',
-// 		description: 'Creating awesome applications for customers.',
-// 		contract: ContractType.Freelance,
-// 		type: 'Software Development',
-// 		location: 'Home',
-// 		period: { from: new Date(2022, 0, 1), to: new Date() },
-// 		skills: getSkills('css', 'html', 'js'),
-// 		name: 'Junior Freelancer',
-// 		color: 'green',
-// 		links: [],
-// 		logo: Assets.Unknown,
-// 		shortDescription: 'Creating awesome applications for customers.'
-// 	}
-// ];
-// import { ContractType } from './types';
-// import type { Experience } from './types';
-// import { getSkills } from './utils/skills';
-// import { Assets } from './assets'; // Assuming Assets is defined somewhere in your project
 
 export const items: Array<Experience> = [
-  {
-    slug: 'full-stack-dev',
-    name: 'Software Developer',
-    company: 'Byte Camp',
-    description: 'Designing, implementing and deploying a new content hosting and managment platform in house. ',
-    shortDescription: 'Designing, implementing and deploying a new content hosting and managment platform in house. Also built a an api for other internal applications to connect into the new service.',
-    logo: Assets.Unknown, // Assuming you have a logo placeholder
-    color: 'blue', // Assuming you have a Color enum or type
-    location: 'Vancouver, British Columbia, Canada',
-    contract: ContractType.FullTime,
-    period: { from: new Date(2024, 9) }, // September 2024
-    type: 'Software Development',
-    skills: getSkills('python', 'nodejs', 'ts', 'js', 'bun',  'html', 'tailwind', 'css'), // Assuming getSkills is a utility to fetch relevant skills
-    links: []
-  },
-  {
-    slug: 'regional-manager-systems-analyst',
-    name: 'Regional Manager and Systems Analyst',
-    company: 'Byte Camp',
-    description: 'Managed large team, handled conflicts. Oversaw software deployment and provided support to employees in the field.',
-    shortDescription: 'Managed large team, handled conflicts. Oversaw software deployment and provided support to employees in the field.',
-    logo: Assets.Unknown, // Assuming you have a logo placeholder
-    color: 'blue', // Assuming you have a Color enum or type
-    location: 'Vancouver, British Columbia, Canada',
-    contract: ContractType.FullTime,
-    period: { from: new Date(2024, 4) }, // May 2024
-    type: 'Management and Systems Analysis',
-    skills: getSkills('python', 'nodejs', 'ts', 'html', 'css'), // Assuming getSkills is a utility to fetch relevant skills
-    links: []
-  },
-  {
-    slug: 'full-stack-developer',
-    name: 'Full Stack Developer',
-    company: 'Reva Solutions',
-    description: 'Developing full-stack applications for enterprise content managment using various technologies. Including integrations with Opentext, Box, ServiceNow, and Salesforce ',
-    shortDescription: 'Developing full-stack applications specializing in enterprise content managment',
-    logo: Assets.Unknown,
-    color: 'orange',
-    location: 'Vancouver, British Columbia, Canada',
-    contract: ContractType.FullTime, // Assuming Co-op is handled under Internship
-    period: { from: new Date(2023, 4, 1), to: new Date(2023, 11, 31) }, // May 2023 to Dec 2023
-    type: 'Software Development',
-    skills: getSkills('python', 'js', 'reactjs', 'nodejs', 'deno'),
-    links: []
-  },
-  {
-    slug: 'instructor-leader',
-    name: 'Instructor/Leader',
-    company: 'Byte Camp',
-    description: 'Teaching various concepts including OOP, data structures and algorithms and game design with inventive new techniques',
-    shortDescription: 'Teaching various concepts including OOP, data structures and algorithms',
-    logo: Assets.Unknown,
-    color: 'yellow',
-    location: 'Nanaimo, British Columbia, Canada',
-    contract: ContractType.FullTime,
-    period: { from: new Date(2022, 5), to: new Date(2022, 7) }, // Jun 2022 to Aug 2022
-    type: 'Education and Leadership',
-    skills: getSkills('python', 'working-with-children'),
-    links: []
-  },
-  {
-    slug: 'instructor',
-    name: 'Instructor',
-    company: 'Kumon North America, Inc.',
-    description: 'Tutoring children in mathematics and calculus. Providing one on one and general explainations of advanced math and calculus concepts.',
-    shortDescription: 'Tutoring children in mathematics and calculus.',
-    logo: Assets.Unknown,
-    color: 'green',
-    location: 'Nanaimo, British Columbia, Canada',
-    contract: ContractType.PartTime,
-    period: { from: new Date(2019, 5), to: new Date(2022, 5) }, // Jun 2019 to Jun 2022
-    type: 'Education',
-    skills: getSkills('working-with-children', 'calculus'),
-    links: []
-  }
+	{
+		slug: 'byte-camp-software-engineer',
+		name: 'Software Engineer / Vancouver Regional Manager',
+		company: 'Byte Camp',
+		location: 'Vancouver, British Columbia, Canada',
+		contract: ContractType.FullTime,
+		type: 'Software Engineering & Infrastructure',
+		color: 'blue',
+		period: { from: new Date(2024, 0, 1) },
+		logo: Assets.ByteCamp,
+		links: [],
+		shortDescription:
+			'Software engineer and Vancouver regional manager building and operating production software, Linux infrastructure, and analytics for a nonprofit technology education organization.',
+		skills: getSkills(
+			'ts',
+			'js',
+			'reactjs',
+			'nextjs',
+			'nodejs',
+			'php',
+			'mysql',
+			'postgresql',
+			'oracle',
+			'react-native',
+			'expo',
+			'flutter',
+			'stripe',
+			'linux',
+			'ubuntu',
+			'docker',
+			'kubernetes',
+			'aws',
+			'wireguard',
+			'python',
+			'streamlit'
+		),
+		description: `### Production Software
+
+- Build and operate full-stack web applications, registration workflows, and mobile applications used by more than 2,000 monthly users.
+- Develop frontend features, backend services, REST APIs, reporting and analytics tooling, and integrations between internal and external services.
+- Work across TypeScript, JavaScript, React, Next.js, Node.js, PHP, and WordPress, with MySQL, PostgreSQL, Oracle, and MSSQL Server.
+- Ship mobile applications with React Native, Expo, and Flutter, including Stripe payment integrations.
+- Troubleshoot production issues, improve caching and performance, and maintain software used by internal teams and external users.
+
+### Linux Fleet Infrastructure
+
+- Responsible for infrastructure supporting more than 300 Linux computers, primarily ThinkPad laptops.
+- Handle device provisioning, automated deployment, remote updates, and fleet recovery across unreliable networks.
+- Maintain consistent configurations across the fleet through remote administration, shell scripting, and deployment automation.
+- Operate containerized internal services with Ubuntu, Docker, Podman, Kubernetes, and AWS.
+
+### Networking
+
+- Implemented and maintained a WireGuard-based mesh spanning hundreds of devices.
+- Provided secure device connectivity, network routing, and remote device management across distributed environments.
+
+### Production Incident
+
+- Diagnosed a silent write-through cache failure that left database writes unpersisted.
+- Recovered the affected unwritten database changes and fixed the root cause to prevent recurrence.
+
+### Analytics & Reporting
+
+- Moved historical MySQL registration data dating back to Summer 2016 into a PostgreSQL analytical warehouse.
+- Built Streamlit dashboards covering enrollment, regions, program types, weeks, booking curves, and forecasting.
+
+### Leadership
+
+- Serve as Vancouver regional manager, covering recruiting, onboarding, staff coordination, delegation, curriculum development, and program delivery.
+- Translate organizational and operational requirements into technical improvements.
+
+### Technical Ownership
+
+- Work across research, development, infrastructure, deployment, production support, troubleshooting, and maintenance.`
+	},
+	{
+		slug: 'reva-software-systems-developer',
+		name: 'Software Systems Developer',
+		company: 'Reva Software Group',
+		location: 'Vancouver, British Columbia, Canada',
+		contract: ContractType.FullTime,
+		type: 'Enterprise Applications & Integrations',
+		color: 'orange',
+		period: { from: new Date(2023, 4, 1), to: new Date(2023, 11, 31) },
+		logo: Assets.Reva,
+		links: [],
+		shortDescription:
+			'Enterprise application and integration work across ServiceNow, Box, Documentum D2, and Java/Spring APIs.',
+		skills: getSkills('java', 'kotlin', 'js', 'spring', 'servicenow', 'box', 'documentum'),
+		description: `- Worked on a ServiceNow and Box integration supporting secure file transfer and enterprise content-management workflows.
+- Built Documentum D2 functionality involving product collections, supporting knowledge transfer and onboarding workflows.
+- Developed Java APIs and Documentum D2 integrations, working with Kotlin, JavaScript, and Spring in an object-oriented enterprise application environment.
+- Worked within established enterprise systems and content-management platforms rather than exclusively greenfield applications.`
+	},
+	{
+		slug: 'bcit-computing-club-president',
+		name: 'President',
+		company: 'BCIT Computing Club',
+		location: 'Vancouver, British Columbia, Canada',
+		contract: ContractType.PartTime,
+		type: 'Technical Leadership',
+		color: 'green',
+		period: { from: new Date(2025, 0, 1), to: new Date(2026, 4, 1) },
+		logo: Assets.BcitComputingClub,
+		links: [],
+		shortDescription:
+			'Led the BCIT Computing Club and organized technical events, hackathons, and developer-community initiatives.',
+		skills: getSkills('technical-leadership', 'event-management', 'phoenix', 'aws'),
+		description: `- Led the BCIT Computing Club, emphasizing practical software development and substantial engineering activities over introductory workshops.
+- Organized technical event planning, hackathon organization, infrastructure planning, technical documentation, and coordination with participants and sponsors.
+- Helped organize **Hack the Break 2026**, an in-person hackathon with approximately 200 expected participants on March 13–15, 2026 at the BCIT SE2 Great Hall, including Phoenix LiveView event infrastructure, technical challenge design, and AWS EC2 hosting documentation.
+- Organized and emceed **HTTP Hacks 2025** on November 7–9, 2025 at the BCIT SE2 Great Hall for approximately 100–150 participants, with prizes of $1,000, $700, and $300.
+- Designed a technical scavenger hunt / CTF for BCIT CST students featuring developer tools, browser console, Base64, Git, source and network inspection, APIs, Discord bot clues, and programming puzzles.
+- Built a developer community around programming competitions and practical engineering challenges.`
+	}
 ];
 
 export const title = 'Experience';
